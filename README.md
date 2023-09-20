@@ -4,6 +4,9 @@ A quick prototype showing a strawman solution approach to improve the Developer 
 # Synopsis:
 This use-case targets Application Developers and Data Scientists who may not be very comfortable with DevOps execution (Cloud plumbing) for deploying their applications to distributed computing systems like GKE. As per the prototype, the user enters designs a prompt (currently hardcoded in the python file) and generates a manifest file using the Code Bison model from Vertex AI. This is refined and automatically deployed to a GKE cluster. The application is available for unit testing for Application Developers and Data Scientists without writing a piece of code or having to dependent on DevOps, SRE teams. This demonstrated the usage of GenAI in improving the Developer efficiency
 
+# Architecture Diagram 
+![llm-gke-automate-strawman-architecture](https://github.com/kirankvasudevan/llm-gke-deploy-automation/assets/111629850/379af57d-0dbe-4bd2-87a0-238b9e8b13e3)
+
 # Pre-requisites and Assumptions:
 1. An active GCP project exists with Vertex AI and Container (GKE) APIs enabled
 2. There is a service account or user having the right permissions to call vertex APIs, create a GKE cluster and deploy manifest files to GKE.
